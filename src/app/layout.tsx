@@ -2,10 +2,8 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "./_components/theme_provider";
-import { SidebarInset, SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar";
-import { Separator } from "@/components/ui/separator";
+import { SidebarInset, SidebarProvider } from "@/components/ui/sidebar";
 import { AppSidebar } from "./_components/app_sidebar";
-import PageTitle from "./_components/page-title";
 import { SiteHeader } from "./_components/site-header";
 
 const geistSans = Geist({
@@ -40,7 +38,7 @@ export default function RootLayout({
         >
           <SidebarProvider>
             <AppSidebar />
-            <SidebarInset>
+            <SidebarInset className="overflow-hidden h-full">
               <SiteHeader />
               <div className="overflow-hidden">
                 {children}

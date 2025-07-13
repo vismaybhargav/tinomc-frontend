@@ -3,8 +3,6 @@ import { SidebarMenu, SidebarMenuButton, SidebarMenuItem, useSidebar } from "@/c
 import { Gamepad2 } from "lucide-react";
 
 export function ServerBrand() {
-    const { isMobile } = useSidebar();
-
     return (
         <SidebarMenu>
             <SidebarMenuItem>
