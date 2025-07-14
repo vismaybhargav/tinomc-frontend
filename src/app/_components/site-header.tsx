@@ -1,5 +1,5 @@
 import { SidebarTrigger } from "@/components/ui/sidebar";
-import { ThemeToggle } from "./theme_toggle";
+import { ThemeToggle } from "./theme-toggle";
 import { Separator } from "@/components/ui/separator";
 import PageTitle from "./page-title";
 

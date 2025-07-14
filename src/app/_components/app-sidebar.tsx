@@ -2,10 +2,10 @@
 
 import { Sidebar, SidebarContent, SidebarFooter, SidebarHeader, SidebarRail } from "@/components/ui/sidebar";
 import React from "react";
-import { NavMain } from "./nav_main";
+import { NavMain } from "./nav-main";
 import { LucideIcon, Settings } from "lucide-react";
-import { NavUser } from "./nav_user";
-import { ServerBrand } from "./server_brand";
+import { NavUser } from "./nav-user";
+import { ServerBrand } from "./server-brand";
 
 export interface User {
     name: string,
