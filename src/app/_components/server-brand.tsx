@@ -10,7 +10,7 @@ export function ServerBrand() {
                     size="lg"
                     className="data-[state=open]:bg-sidebar-accent data-[state=open]:text-sidebar-accent-foreground"
                 >
-                <Link href="/" className="flex items-center gap-2">
+                <Link href="/dashboard" className="flex items-center gap-2">
                         <div className="bg-sidebar-primary text-sidebar-primary-foreground flex aspect-square size-8 items-center justify-center rounded-lg">
                             <Gamepad2 className="size-4" />
                         </div>

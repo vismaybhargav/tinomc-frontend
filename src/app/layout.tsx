@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { ThemeProvider } from "./_components/theme-provider";
-import { archivo } from "./fonts";
+import { archivo } from "../lib/fonts";
 
 export const metadata: Metadata = {
   title: "TinoMC Admin Dashboard",

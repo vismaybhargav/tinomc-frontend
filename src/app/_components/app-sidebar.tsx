@@ -46,7 +46,7 @@ const data: NavData = {
             items: [
                 {
                     title: "Environment Variables",
-                    url: "env-vars"
+                    url: "environment-variables"
                 }
             ]
         }
@@ -62,7 +62,7 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
             <SidebarContent>
                 <NavMain items={data.navMain} />
             </SidebarContent>
-            <SidebarFooter>
+            <SidebarFooter className="bg-red-500">
                 <NavUser user={data.user} />
             </SidebarFooter>
             <SidebarRail />

@@ -3,7 +3,8 @@ module.exports = {
     theme: {
         extend: {
             fontFamily: {
-                sans: ['var(--font-archivo']
+                sans: ['var(--font-archivo'],
+                mono: ['var(--font-ibm-plex-mono)'],
             },
             fontWeight: {
                 light: 300,
