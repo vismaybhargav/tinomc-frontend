@@ -8,12 +8,10 @@ export default function DashboardLayout({
 }: {
     children: React.ReactNode;
 }) {
+    /*const cookieStore = await cookies();
+    const defaultOpen = cookieStore.get("sidebar_state")?.value === "true";*/
+
     return (
-        <ThemeProvider
-            attribute="class"
-            defaultTheme="system"
-            enableSystem
-        >
             <SidebarProvider className="overflow-none h-screen w-full">
                 <AppSidebar />
                 <SidebarPortal className="overflow-none scrollbar-track-transparent scrollbar-thumb-accent-foreground">
@@ -23,6 +21,5 @@ export default function DashboardLayout({
                     </div>
                 </SidebarPortal>
             </SidebarProvider>
-        </ThemeProvider>
     );
 }

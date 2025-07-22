@@ -6,6 +6,7 @@ import { NavMain } from "./nav-main";
 import { LucideIcon, Settings } from "lucide-react";
 import { NavUser } from "./nav-user";
 import { ServerBrand } from "./server-brand";
+import NavServerStatus from "./nav-server-status";
 
 export interface User {
     name: string,
@@ -57,16 +58,17 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
     return (
         <Sidebar variant="inset" collapsible="icon" {...props}>
             <SidebarHeader>
-                <ServerBrand /> 
+                <ServerBrand />
             </SidebarHeader>
             <SidebarContent>
                 <NavMain items={data.navMain} />
             </SidebarContent>
-            <SidebarFooter className="bg-red-500">
+            <SidebarFooter>
+                <NavServerStatus />
                 <NavUser user={data.user} />
             </SidebarFooter>
             <SidebarRail />
-        </Sidebar>
+        </Sidebar >
     )
 
 }
